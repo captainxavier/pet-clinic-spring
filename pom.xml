@@ -9,7 +9,7 @@
     </parent>
     <groupId>com.xavier</groupId>
     <artifactId>pet-clinic</artifactId>
-    <version>0.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
 
     <modules>
         <module>pet-clinic-data</module>
@@ -35,15 +35,14 @@
                 <artifactId>maven-release-plugin</artifactId>
                 <configuration>
                     <goals>install</goals>
+                    <autoVersionSubmodules>true</autoVersionSubmodules>
                 </configuration>
             </plugin>
         </plugins>
     </build>
     <scm>
-        <developerConnection>
-        scm:git:git@github.com:captainxavier/pet-clinic-spring.git
-        </developerConnection>
-      <tag>pet-clinic-0.0.1</tag>
-  </scm>
+        <developerConnection>scm:git:git@github.com:captainxavier/pet-clinic-spring.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
 
 </project>
