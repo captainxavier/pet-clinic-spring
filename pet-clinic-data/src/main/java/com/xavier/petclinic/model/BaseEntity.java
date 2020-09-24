@@ -1,8 +1,10 @@
 package com.xavier.petclinic.model;
 
+import javax.persistence.Id;
 import java.io.Serializable;
 
 public class BaseEntity implements Serializable {
+
 
     private Long id;
 
