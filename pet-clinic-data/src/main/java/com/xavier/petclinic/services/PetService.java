@@ -6,13 +6,8 @@ import com.xavier.petclinic.model.Pet;
 
 import java.util.Set;
 
-public interface PetService {
+public interface PetService extends CrudServices<Pet, Long>{
 
-    Pet findById(Long id);
-
-    Pet save(Pet pet);
-
-    Set<Pet> findAll();
 
 
 }
