@@ -6,7 +6,7 @@ import java.util.Set;
 
 public interface OwnerServices extends CrudServices<OwnerServices, Long> {
 
-    Owner finfByLastName(String lastName);
+   Owner findByLastName(String lastName);
 
 
 }

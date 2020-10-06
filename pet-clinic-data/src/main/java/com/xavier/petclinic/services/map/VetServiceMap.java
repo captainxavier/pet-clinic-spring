@@ -2,10 +2,11 @@ package com.xavier.petclinic.services.map;
 
 import com.xavier.petclinic.model.Vet;
 import com.xavier.petclinic.services.CrudServices;
+import com.xavier.petclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet,Long> implements CrudServices<Vet,Long> {
+public class VetServiceMap extends AbstractMapService<Vet,Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
