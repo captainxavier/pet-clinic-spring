@@ -8,8 +8,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 public class OwnerController {
 
-    @RequestMapping({"","/","/index","/index.html"})
+    @RequestMapping({"/find","/","/find owners","/ownersList.html","/search","/Find owners"})
     public String listOfOwners(){
-        return "owners/index";
+        return "owners/ownersList";
     }
 }
