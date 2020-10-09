@@ -9,6 +9,7 @@ import javax.persistence.Table;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 
 @Entity
 @Table(name = "specialities")
