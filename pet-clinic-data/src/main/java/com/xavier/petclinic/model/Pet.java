@@ -7,7 +7,11 @@ import java.time.LocalDate;
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+
+
 @Entity
 @Table(name = "pets")
 public class Pet extends BaseEntity {
@@ -26,8 +30,11 @@ public class Pet extends BaseEntity {
     private Set<Visit> visits = new HashSet<>();
 
 
-
-    public Pet() {
+    public Pet(String name, PetType petType, Owner owner, LocalDate birthDate, Set<Visit> visits) {
+        this.name = name;
+        this.petType = petType;
+        this.owner = owner;
+        this.birthDate = birthDate;
+        this.visits = visits;
     }
-
 }

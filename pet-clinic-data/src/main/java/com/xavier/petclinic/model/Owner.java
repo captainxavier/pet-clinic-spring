@@ -6,7 +6,10 @@ import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
-@Data
+@Getter
+@Setter
+@NoArgsConstructor
+
 @Entity
 @Table(name = "owner")
 public class Owner extends Person {
@@ -20,8 +23,7 @@ public class Owner extends Person {
     @OneToMany(cascade = CascadeType.ALL, mappedBy = "owner")
     private Set<Pet> pet = new HashSet<>();
 
-    public Owner() {
-    }
+
 
     public Owner(String address, String city, String telephone, Set<Pet> pet) {
         this.address = address;
