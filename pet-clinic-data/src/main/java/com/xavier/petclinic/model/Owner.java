@@ -1,9 +1,12 @@
 package com.xavier.petclinic.model;
 
+import lombok.*;
+
 import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
+@Data
 @Entity
 @Table(name = "owner")
 public class Owner extends Person {
@@ -27,35 +30,4 @@ public class Owner extends Person {
         this.pet = pet;
     }
 
-    public String getAddress() {
-        return address;
-    }
-
-    public void setAddress(String address) {
-        this.address = address;
-    }
-
-    public String getCity() {
-        return city;
-    }
-
-    public void setCity(String city) {
-        this.city = city;
-    }
-
-    public String getTelephone() {
-        return telephone;
-    }
-
-    public void setTelephone(String telephone) {
-        this.telephone = telephone;
-    }
-
-    public Set<Pet> getPet() {
-        return pet;
-    }
-
-    public void setPet(Set<Pet> pet) {
-        this.pet = pet;
-    }
 }
