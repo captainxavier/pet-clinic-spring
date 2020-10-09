@@ -3,6 +3,7 @@ package com.xavier.petclinic.services.springJPA;
 import com.xavier.petclinic.model.Vet;
 import com.xavier.petclinic.repositories.VetRepository;
 import com.xavier.petclinic.services.VetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
@@ -10,6 +11,7 @@ import java.util.Optional;
 import java.util.Set;
 
 @Service
+@Profile("springJPA")
 public class VetJPAServices implements VetService {
 
     private final VetRepository vetRepository;

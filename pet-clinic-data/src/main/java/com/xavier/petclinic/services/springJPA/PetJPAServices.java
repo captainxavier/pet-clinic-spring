@@ -4,12 +4,14 @@ package com.xavier.petclinic.services.springJPA;
 import com.xavier.petclinic.model.Pet;
 import com.xavier.petclinic.repositories.PetRepository;
 import com.xavier.petclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.HashSet;
 import java.util.Set;
 
 @Service
+@Profile("springJPA")
 public class PetJPAServices implements PetService {
 
     private final PetRepository petRepository;
